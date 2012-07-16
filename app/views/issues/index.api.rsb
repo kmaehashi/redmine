@@ -14,6 +14,7 @@ api.array :issues, api_meta(:total_count => @issue_count, :offset => @offset, :l
 
       api.subject     issue.subject
       api.description issue.description
+	  api.is_private  issue.is_private
       api.start_date  issue.start_date
       api.due_date    issue.due_date
       api.done_ratio  issue.done_ratio
